@@ -61,6 +61,7 @@ nav a:hover {
 
 main {
   display: grid;
+  max-width: 100%;
   grid-template: 1fr 2fr / 1fr 1fr 1fr 1fr;
 }
 
