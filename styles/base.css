@@ -94,10 +94,9 @@ main h1 {
 section img {
   display: block;
   margin: 0 auto;
-  width: 150px; /* set width */
-  height: 150px; /* set height */
-  object-fit: cover; /* crop without stretching */
-  border-radius: 50%; /* make it round */
+  max-width: 150px;
+  object-fit: cover; 
+  border-radius: 50%;
 }
 
 section h2 {
