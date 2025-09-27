@@ -1,0 +1,24 @@
+@media (min-width: 780px) {
+  header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  nav a {
+    flex: 1 1 100%;
+  }
+}

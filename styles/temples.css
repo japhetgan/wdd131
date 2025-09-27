@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #37353e;
+  --secondary-color: #44444e;
+  --accent-color: #d3dad9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+body,
+p,
+li,
+a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  display: flex;
+  /* justify-content: center; */
+  gap: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: larger;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #eee;
+  color: var(--primary-color);
+}
+
+.show {
+  display: block;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  background: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+#menu::before {
+  content: "≡";
+}
+
+#menu.show::before {
+  content: "X";
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  gap: 10px;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
