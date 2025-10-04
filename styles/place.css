@@ -72,6 +72,10 @@ td:nth-child(odd) {
   text-align: right;
 }
 
+td:nth-child(odd)::after {
+  content: " ";
+}
+
 .card-header {
   background-color: rgba(206, 17, 38, 0.8);
   padding: 10px;
